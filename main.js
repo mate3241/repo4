@@ -7,14 +7,11 @@ const feladat1 = (n) => {
   return array;
 };
 
-function feladat2(number) { // min and max included 
+function feladat2(number) { 
   for (let i = 0; i < number.length; i++) {
     number[i] = Math.floor((Math.random() * 1000) + 1);
   }
 };
-// let randNum = new Array(5);
-// console.log(genRandomNum(randNum));
-// console.log(randNum);
 
 const feladat3 = (array) => {
   let evenNumbers = 0;
@@ -25,6 +22,18 @@ const feladat3 = (array) => {
   }
   return evenNumbers;
 };
+
+function feladat4(array) {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 1) {
+      newArray.push(i);
+    }
+  }
+  return newArray;
+};
+// let array = [1, 3, 5, 8, 5, 2, 3];
+// console.log(feladat4(array));
 
 const feladat5 = (array) => {
   array.sort((a, b) => { return a - b; });
