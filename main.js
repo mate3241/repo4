@@ -4,7 +4,7 @@ const feladat1 = (n) => {
     array.push(0);
   }
   return array;
-}
+};
 
 const feladat3 = (array) => {
   let evenNumbers = 0;
@@ -14,4 +14,9 @@ const feladat3 = (array) => {
     }
   }
   return evenNumbers;
-}
+};
+
+const feladat5 = (array) => {
+  array.sort((a, b) => { return a - b; });
+  return array;
+};
