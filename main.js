@@ -1,3 +1,4 @@
+
 const feladat1 = (n) => {
   let array = [];
   for (let i = 0; i < array.length; i++) {
@@ -5,6 +6,15 @@ const feladat1 = (n) => {
   }
   return array;
 };
+
+function feladat2(number) { // min and max included 
+  for (let i = 0; i < number.length; i++) {
+    number[i] = Math.floor((Math.random() * 1000) + 1);
+  }
+};
+// let randNum = new Array(5);
+// console.log(genRandomNum(randNum));
+// console.log(randNum);
 
 const feladat3 = (array) => {
   let evenNumbers = 0;
