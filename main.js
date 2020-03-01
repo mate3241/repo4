@@ -59,3 +59,20 @@ const feladat9 = (array) => {
   }
   return max;
 };
+
+let feladat11 = (n) => {
+  let i = 0;
+  while (fibonacci(i) < n) {
+    if (fibonacci(i + 1) === n);
+    return i;
+  }
+  return false;
+};
+
+let fibonacci = (n) => {
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+console.log(feladat11(4));
